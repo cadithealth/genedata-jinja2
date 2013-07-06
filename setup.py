@@ -24,15 +24,15 @@ test_requires = [
   ]
 
 requires = [
-  'genedata             >= 0.1.1',
+  'TemplateAlchemy      >= 0.1.2',
   'jinja2               >= 2.7',
   'MarkupSafe           >= 0.18',
-  ] + test_requires
+  ]
 
 setup(
-  name                  = 'genedata-jinja2',
-  version               = '0.1.0',
-  description           = 'Provides the Jinja2 template rendering engine to `genedata`',
+  name                  = 'TemplateAlchemy-Jinja2',
+  version               = '0.1.1',
+  description           = 'Provides the Jinja2 template rendering engine to `TemplateAlchemy`',
   long_description      = README,
   classifiers           = [
     'Development Status :: 4 - Beta',
@@ -46,15 +46,15 @@ setup(
     ],
   author                = 'Philip J Grabner, Cadit Health Inc',
   author_email          = 'oss@cadit.com',
-  url                   = 'http://github.com/cadithealth/genedata-jinja2',
-  keywords              = 'genedata jinja2',
+  url                   = 'http://github.com/cadithealth/templatealchemy-jinja2',
+  keywords              = 'templatealchemy jinja2',
   packages              = find_packages(),
-  namespace_packages    = ['genedata'],
+  namespace_packages    = ['templatealchemy'],
   include_package_data  = True,
   zip_safe              = True,
   install_requires      = requires,
   tests_require         = test_requires,
-  test_suite            = 'genedata',
+  test_suite            = 'templatealchemy',
   entry_points          = '',
   license               = 'MIT (http://opensource.org/licenses/MIT)',
   )

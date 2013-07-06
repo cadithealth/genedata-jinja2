@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------------------------
 # file: $Id$
-# lib:  genedata.test_jinja2
+# lib:  templatealchemy.test_jinja2
 # auth: Philip J Grabner <grabner@cadit.com>
 # date: 2013/07/03
 # copy: (C) Copyright 2013 Cadit Health Inc., All Rights Reserved.
 #------------------------------------------------------------------------------
 
 import unittest, os.path
-import genedata, genedata.engine
-from genedata.util import adict
+import templatealchemy, templatealchemy.engine
+from templatealchemy.util import adict
 
 #------------------------------------------------------------------------------
-class TestGenedataJinja2(unittest.TestCase):
+class TestTemplateAlchemyJinja2(unittest.TestCase):
 
   maxDiff = None
 
@@ -33,11 +33,11 @@ class TestGenedataJinja2(unittest.TestCase):
  </body>
 </html>
 '''
-    tpl = genedata.engine.Template(
+    tpl = templatealchemy.engine.Template(
       source='string:' + src,
       renderer='jinja2')
     out = tpl.render('html', adict(
-        title='Genedata',
+        title='TemplateAlchemy',
         doc=adict(title='Jinja2'),
         sections=[
           adict(title='Overview', text='Good'),
@@ -47,10 +47,10 @@ class TestGenedataJinja2(unittest.TestCase):
     chk = '''\
 <html>
  <head>
-  <title>Genedata</title>
+  <title>TemplateAlchemy</title>
  </head>
  <body>
-  <h1>Genedata</h1>
+  <h1>TemplateAlchemy</h1>
   <h2>Jinja2</h2>
    <h3>Overview</h3>
    <p>Good</p>
