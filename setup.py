@@ -24,14 +24,14 @@ test_requires = [
   ]
 
 requires = [
-  'TemplateAlchemy      >= 0.1.2',
+  'TemplateAlchemy      >= 0.1.3',
   'jinja2               >= 2.7',
   'MarkupSafe           >= 0.18',
   ]
 
 setup(
   name                  = 'TemplateAlchemy-Jinja2',
-  version               = '0.1.1',
+  version               = '0.1.2',
   description           = 'Provides the Jinja2 template rendering engine to `TemplateAlchemy`',
   long_description      = README,
   classifiers           = [
