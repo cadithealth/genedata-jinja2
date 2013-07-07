@@ -25,8 +25,8 @@ class Jinja2Renderer(api.Renderer):
     self.spec = spec
 
   #----------------------------------------------------------------------------
-  def render(self, context, data, params):
-    tpl = jinja2.Template(data)
+  def render(self, context, stream, params):
+    tpl = jinja2.Template(stream.read())
     return tpl.render(**params)
 
 #------------------------------------------------------------------------------
