@@ -20,7 +20,8 @@ def loadRenderer(spec=None):
 class Jinja2Renderer(api.Renderer):
 
   #----------------------------------------------------------------------------
-  def __init__(self, spec):
+  def __init__(self, spec, *args, **kw):
+    super(Jinja2Renderer, self).__init__(self.ns('jinja2', spec), *args, **kw)
     # TODO: expose control of `jinja2.template.Template()` args/kwargs...
     self.spec = spec
 

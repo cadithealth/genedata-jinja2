@@ -24,7 +24,7 @@ test_requires = [
   ]
 
 requires = [
-  'TemplateAlchemy      >= 0.1.4',
+  'TemplateAlchemy      >= 0.1.7',
   'jinja2               >= 2.7',
   'MarkupSafe           >= 0.18',
   ]
