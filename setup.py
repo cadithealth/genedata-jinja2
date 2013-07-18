@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------------------------
@@ -31,7 +32,7 @@ requires = [
 
 setup(
   name                  = 'TemplateAlchemy-Jinja2',
-  version               = '0.1.3',
+  version               = '0.1.4',
   description           = 'Provides the Jinja2 template rendering engine to `TemplateAlchemy`',
   long_description      = README,
   classifiers           = [
