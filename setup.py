@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------------------------
@@ -25,14 +24,14 @@ test_requires = [
   ]
 
 requires = [
-  'TemplateAlchemy      >= 0.1.7',
+  'TemplateAlchemy      >= 0.1.12',
   'jinja2               >= 2.7',
   'MarkupSafe           >= 0.18',
   ]
 
 setup(
   name                  = 'TemplateAlchemy-Jinja2',
-  version               = '0.1.4',
+  version               = '0.1.5',
   description           = 'Provides the Jinja2 template rendering engine to `TemplateAlchemy`',
   long_description      = README,
   classifiers           = [
@@ -48,9 +47,9 @@ setup(
   author                = 'Philip J Grabner, Cadit Health Inc',
   author_email          = 'oss@cadit.com',
   url                   = 'http://github.com/cadithealth/templatealchemy-jinja2',
-  keywords              = 'templatealchemy jinja2',
+  keywords              = 'templatealchemy jinja2 driver',
   packages              = find_packages(),
-  namespace_packages    = ['templatealchemy'],
+  namespace_packages    = ['templatealchemy_driver'],
   include_package_data  = True,
   zip_safe              = True,
   install_requires      = requires,
