@@ -43,7 +43,7 @@ classifiers = [
 
 setup(
   name                  = 'TemplateAlchemy-Jinja2',
-  version               = read('VERSION.txt', default='0.0.1').strip()
+  version               = read('VERSION.txt', default='0.0.1').strip(),
   description           = 'Provides the Jinja2 template rendering engine to `TemplateAlchemy`',
   long_description      = read('README.rst'),
   classifiers           = classifiers,
